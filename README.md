@@ -5,11 +5,11 @@ The project aimed to analyze the growth of electric vehicles (EVs) and the avail
 
 **MongoDB for Data Storage:** MongoDB, a NoSQL database, was utilized for its flexibility in handling structured and unstructured data. The data from the EV population and charging station datasets were imported into MongoDB collections named "ev_vehicle_population" and "ev_charging_station" respectively.
 
-**ETL (Extract, Transform, Load):
-**
+**ETL (Extract, Transform, Load):**
 Extraction: Data was extracted from JSON and CSV files and imported into Python using Pandas and PyMongo.
 Transformation: The data underwent cleaning and preprocessing to ensure it was suitable for analysis. For example, zip codes were standardized, and irrelevant columns were filtered out.
 Loading: The cleaned data was then loaded into the MongoDB database for further analysis.
+
 **PostgreSQL for Data Analysis:** PostgreSQL was chosen as the database platform for its reliability and robust querying capabilities. Data from the MongoDB collections was loaded into PostgreSQL tables for visualization and analysis.
 
 **Visualization:** Various visualization libraries such as Bokeh, Graphviz, and Matplotlib were employed to present the insights derived from the data. Visualizations included maps showing the distribution of EVs and charging stations, line graphs illustrating vehicle production trends, and pie charts representing payment modes at charging stations.
